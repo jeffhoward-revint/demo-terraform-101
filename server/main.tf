@@ -4,7 +4,7 @@ resource "aws_key_pair" "default" {
 }
 
 provider "aws" {
-  # MODIFY this line to look for 2.27.0 or greater
+  # MODIFY this line to look for 2.27.0 or greater modified
   version = ">= 2.27.0"
 }
 
