@@ -3,6 +3,11 @@ resource "aws_key_pair" "default" {
   public_key = var.public_key
 }
 
+provider "aws" {
+  # MODIFY this line to look for 2.27.0 or greater
+  version = ">= 2.27.0"
+}
+
 resource "aws_security_group" "default" {
   name_prefix = var.identity
 
